@@ -1,16 +1,29 @@
 var http=require('http');
 
 var server=http.createServer(function(req,res){
-		if(req.url=='/'){ //return text
+		switch (req.url.toLowerCase()){
+		case '/':		//return text
 			res.writeHead(200, {'Content-Type':'text/html'});
 			res.write('<html><body><p>This is Home Page.</p></body></html>');
-			res.end();	
-		}else if(req.url=='/test'){
+			res.end();
+			break;
+
+		case '/test':	//return text
 			res.writeHead(200, {'Content-Type':'text/html'});
 			res.write('<html><body><p>This is test Page.</p></body></html>');
 			res.end();
-		}else
+			break;
+
+		case '/data':	//return JSON data
+			res.writeHead(200, { 'Content-Type': 'application/json' });
+			res.write(JSON.stringify({ message: "Hello World"}));
+			res.end();
+			break;
+
+		default:
 			res.end('Invalid Request!');
+			break;
+	}		
 
 });
 
