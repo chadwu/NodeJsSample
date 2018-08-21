@@ -1,0 +1,24 @@
+{
+  "name": "nodejssample",
+  "version": "1.0.0",
+  "description": "sample1: http server sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadwu/NodeJsSample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadwu/NodeJsSample/issues"
+  },
+  "homepage": "https://github.com/chadwu/NodeJsSample#readme",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
