@@ -1,7 +1,6 @@
-var http=require('http');
-var server=http.createServer(function(request,response){
-		//handle imcoming request here...
-});
+const http = require('http');
 
-server.listen(18892);
-console.log("Node.js web server at port 18892 is running.");
+http.createServer(function (_request, _response) {
+  // handle imcoming request here...
+}).listen(18892);
+console.log('Node.js web server at port 18892 is running.');
