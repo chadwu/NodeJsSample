@@ -8,8 +8,8 @@
             "type": "node",
             "request": "launch",
             "name": "啟動程式",
-            //"program": "${workspaceFolder}/sample1/server-4.js"
-            "program": "${workspaceFolder}/sample4/index-7.js"
+            //"program": "${workspaceFolder}/sample4/server-7.js"
+            "program": "${workspaceFolder}/sample-emitter/emitter-3.js"
         }
     ]
 }
